@@ -32,6 +32,26 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+    <script type="text/javascript">
+            function showImage(imgName) {
+                document.getElementById('largeImg').src = imgName;
+                showLargeImagePanel();
+                unselectAll();
+            }
+            function showLargeImagePanel() {
+                document.getElementById('largeImgPanel').style.visibility = 'visible';
+            }
+            function unselectAll() {
+                if(document.selection) document.selection.empty();
+                if(window.getSelection) window.getSelection().removeAllRanges();
+            }
+            function hideMe(obj) {
+                obj.style.visibility = 'hidden';
+            }
+        </script>
+
+        
 
 </head>
 
@@ -71,9 +91,9 @@
                     <li>
                         <a class="page-scroll" href="#about">Projects</a>
                     </li>
-                    <!-- <li>
-                        <a class="page-scroll" href="#team">Hobbies</a>
-                    </li> -->
+                	<li>
+                        <a class="page-scroll" href="#team">Sketchbook</a>
+                    </li> 
                     <!-- <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li> -->
@@ -290,14 +310,77 @@
                                 </div>
                             </div>
                         </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <a href="https://github.com/anakhap/pinme"><img class="img-circle img-responsive" style="margin-top: 10px" src="img/about/PinMe.jpg" alt="PinMe"></a>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>PinMe</h4>
+                                    <h4 class="subheading">September 2015</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Users can use geolocation to locate people and places, or share their location with friends. Keeps track of history of all previous pins that user has searched. Complete with user authentication. Uses the Google Maps API, Bootstrap, Ruby on Rails, PostgreSQL database, and hosted with Heroku.</p>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Portfolio Section (Sketches) -->
+    <section id="team" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Sketchbook</h2>
+                    <!-- <h2 class="section-heading">Life Through the Lens</h2> -->
+                    <h3 class="section-subheading text-muted">"The world is but a canvas to our imagination." ~ Henry David Thoreau</h3>
+                </div>
+            </div>
+            
+        <img src="ArtsPics/DSC_0062_small.JPG" style="cursor:pointer" onclick="showImage('ArtsPics/DSC_0062.JPG');" />
+        <img src="ArtsPics/DSC_0064_small.JPG" style="cursor:pointer" onclick="showImage('ArtsPics/DSC_0064.JPG');" />
+        <img src="ArtsPics/DSC_0066_small.JPG" style="cursor:pointer" onclick="showImage('ArtsPics/DSC_0066.JPG');" />
+        <img src="ArtsPics/DSC_0068_small.JPG" style="cursor:pointer" onclick="showImage('ArtsPics/DSC_0068.JPG');" />
+        <img src="ArtsPics/DSC_0063_small.JPG" style="cursor:pointer" onclick="showImage('ArtsPics/DSC_0063.JPG');" />
+        <img src="ArtsPics/DSC_0065_small.JPG" style="cursor:pointer" onclick="showImage('ArtsPics/DSC_0065.JPG');" />
+        <img src="ArtsPics/DSC_0069_small.JPG" style="cursor:pointer" onclick="showImage('ArtsPics/DSC_0069.JPG');" />
+        <img src="ArtsPics/DSC_0070_small.JPG" style="cursor:pointer" onclick="showImage('ArtsPics/DSC_0070.JPG');" />
+        <img src="ArtsPics/DSC_0071_small.JPG" style="cursor:pointer" onclick="showImage('ArtsPics/DSC_0071.JPG');" />
+        <img src="ArtsPics/DSC_0073_small.JPG" style="cursor:pointer" onclick="showImage('ArtsPics/DSC_0073.JPG');" />
+        <img src="ArtsPics/DSC_0072_small.JPG" style="cursor:pointer" onclick="showImage('ArtsPics/DSC_0072.JPG');" />
+        <img src="ArtsPics/DSC_0075_small.JPG" style="cursor:pointer" onclick="showImage('ArtsPics/DSC_0075.JPG');" />
+        <img src="ArtsPics/DSC_0076_small.JPG" style="cursor:pointer" onclick="showImage('ArtsPics/DSC_0076.JPG');" />
+        <img src="ArtsPics/DSC_3480_small.JPG" style="cursor:pointer" onclick="showImage('ArtsPics/DSC_3480.JPG');" />
+        <img src="ArtsPics/DSC_3484_small.JPG" style="cursor:pointer" onclick="showImage('ArtsPics/DSC_3484.JPG');" />
+        <img src="ArtsPics/DSC_3479_small.JPG" style="cursor:pointer" onclick="showImage('ArtsPics/DSC_3479.JPG');" />
+        <img src="ArtsPics/DSC_0074_small.JPG" style="cursor:pointer" onclick="showImage('ArtsPics/DSC_0074.JPG');" />
+        <img src="ArtsPics/DSC_0077_small.JPG" style="cursor:pointer" onclick="showImage('ArtsPics/DSC_0077.JPG');" />
+        <img src="ArtsPics/DSC_3482_small.JPG" style="cursor:pointer" onclick="showImage('ArtsPics/DSC_3482.JPG');" />
+        <img src="ArtsPics/DSC_3478_small.JPG" style="cursor:pointer" onclick="showImage('ArtsPics/DSC_3478.JPG');" />
+        <img src="ArtsPics/DSC_3485_small.JPG" style="cursor:pointer" onclick="showImage('ArtsPics/DSC_3485.JPG');" />
+        <img src="ArtsPics/DSC_3475_small.JPG" style="cursor:pointer" onclick="showImage('ArtsPics/DSC_3475.JPG');" />
+        <img src="ArtsPics/DSC_0087_small.JPG" style="cursor:pointer" onclick="showImage('ArtsPics/DSC_0087.JPG');" />
+        <!-- <img src="ArtsPics/DSC_0086_small.JPG" style="cursor:pointer" onclick="showImage('ArtsPics/DSC_0086.JPG');" /> -->
+        <img src="ArtsPics/DSC_3486_small.JPG" style="cursor:pointer" onclick="showImage('ArtsPics/DSC_3486.JPG');" />
+        
+        
+        
+        
+        <div id="largeImgPanel" onclick="hideMe(this);">
+            <img id="largeImg" style="height: 100%; margin: 0; padding: 0;" />
+        </div>
+                        	
+        </div>
+    </div>
+        </div>
+    </section>
+    
 
     <!-- Portfolio Grid Section -->
-  <!--  <section id="team" class="bg-light-gray">
+   <!--  <section id="team" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -432,7 +515,7 @@
                 </div> 
             </div>
         </div> 
-    </section> -->
+    </section>  -->
 
     
 
